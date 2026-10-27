@@ -1,0 +1,30 @@
+# systemd unit for a storage node.
+#   sudo useradd --system --home /var/lib/refrax refrax
+#   sudo install -m 0755 target/release/refrax /usr/local/bin/refrax
+#   sudo -u refrax refrax keys new --out /var/lib/refrax/keypair.json
+#   sudo cp deploy/refrax-node.service /etc/systemd/system/ && sudo cp deploy/node.env.example /etc/refrax/node.env
+#   sudo systemctl enable --now refrax-node
+[Unit]
+Description=Refrax storage node
+Documentation=https://github.com/refrax-xyz/refrax-node/blob/main/docs/running-a-node.md
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=refrax
+Group=refrax
+EnvironmentFile=/etc/refrax/node.env
+ExecStart=/usr/local/bin/refrax node start
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+# hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/refrax
+
+[Install]
+WantedBy=multi-user.target

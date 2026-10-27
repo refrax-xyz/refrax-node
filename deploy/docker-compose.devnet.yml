@@ -1,0 +1,13 @@
+# A full local cluster in one container: registry on 7700, nodes on 7701–7716.
+#   docker compose -f deploy/docker-compose.devnet.yml up --build
+#   refrax put ./photo.jpg        (from the host; the registry is on localhost:7700)
+services:
+  devnet:
+    build: ..
+    command: ["devnet", "up", "--host", "0.0.0.0", "--dir", "/data/devnet"]
+    ports:
+      - "7700-7716:7700-7716"
+    volumes:
+      - devnet-keys:/data
+volumes:
+  devnet-keys:
