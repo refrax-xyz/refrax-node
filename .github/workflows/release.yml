@@ -106,7 +106,7 @@ jobs:
           labels: |
             org.opencontainers.image.title=refrax-node
             org.opencontainers.image.description=Storage node for Refrax, object storage coordinated on Solana
-      - uses: docker/build-push-action@v6
+      - uses: docker/build-push-action@v7
         with:
           context: .
           push: true
