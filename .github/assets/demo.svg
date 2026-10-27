@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="527" viewBox="0 0 740 527" role="img" aria-label="refrax: start a devnet, store a file, wipe a node, get slashed, fetch the file">
+<style>
+.f{font-family:'Geist Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace;font-size:13.5px;white-space:pre}
+.l{opacity:0;animation:in .28s ease-out forwards}
+.k{animation:blink 1.05s steps(1) infinite}
+@keyframes in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.l{opacity:1;animation:none}.k{animation:none}}
+</style>
+<rect width="740" height="527" rx="14" fill="#0a0a0d"/>
+<rect x=".5" y=".5" width="739" height="526" rx="13.5" fill="none" stroke="#24242d"/>
+<path d="M0 36h740" stroke="#1a1a21"/>
+<circle cx="22" cy="18" r="6" fill="#ff5f57" opacity=".85"/>
+<circle cx="42" cy="18" r="6" fill="#febc2e" opacity=".85"/>
+<circle cx="62" cy="18" r="6" fill="#28c840" opacity=".85"/>
+<text x="370.0" y="22.5" text-anchor="middle" class="f" fill="#7c7c88" font-size="12">~/refrax-node</text>
+<text x="26" y="56" class="f l" style="animation-delay:0.75s"><tspan fill="#af87ff">$ </tspan><tspan fill="#ffffff" font-weight="600">refrax devnet up</tspan></text>
+<text x="26" y="77" class="f l" style="animation-delay:0.87s"><tspan fill="#e4e4ec">  </tspan><tspan fill="#af87ff">◆ </tspan><tspan fill="#ffffff" font-weight="600">refrax devnet </tspan><tspan fill="#7c7c88">· 16 nodes · local registry</tspan></text>
+<text x="26" y="98" class="f l" style="animation-delay:0.99s"><tspan fill="#7c7c88">  registry   </tspan><tspan fill="#5fd7ff">http://127.0.0.1:7700</tspan><tspan fill="#7c7c88">  mirrors the Solana program accounts</tspan></text>
+<text x="26" y="119" class="f l" style="animation-delay:1.11s"><tspan fill="#e4e4ec">  </tspan><tspan fill="#00ff87">ready</tspan><tspan fill="#e4e4ec"> in 12 ms</tspan></text>
+<text x="26" y="140" class="f l" style="animation-delay:1.16s"></text>
+<text x="26" y="161" class="f l" style="animation-delay:1.71s"><tspan fill="#af87ff">$ </tspan><tspan fill="#ffffff" font-weight="600">refrax put launch-video.png</tspan></text>
+<text x="26" y="182" class="f l" style="animation-delay:1.83s"><tspan fill="#e4e4ec">  </tspan><tspan fill="#af87ff">◆ </tspan><tspan fill="#ffffff" font-weight="600">refrax put </tspan><tspan fill="#7c7c88">· launch-video.png · 142.6 KiB</tspan></text>
+<text x="26" y="203" class="f l" style="animation-delay:1.95s"><tspan fill="#7c7c88">  encode     </tspan><tspan fill="#e4e4ec">16 facets × 29.0 KiB · any 5 rebuild it</tspan><tspan fill="#7c7c88">          5 ms</tspan></text>
+<text x="26" y="224" class="f l" style="animation-delay:2.07s"><tspan fill="#7c7c88">  register   </tspan><tspan fill="#e4e4ec">object </tspan><tspan fill="#af87ff">BbBw…goJW</tspan><tspan fill="#e4e4ec"> · root 54b6…6dc5 · slot 6</tspan><tspan fill="#7c7c88">       2 ms</tspan></text>
+<text x="26" y="245" class="f l" style="animation-delay:2.19s"><tspan fill="#7c7c88">  scatter    </tspan><tspan fill="#e4e4ec">16/16 nodes accepted their facet </tspan><tspan fill="#00ff87">✓</tspan><tspan fill="#7c7c88">              24 ms</tspan></text>
+<text x="26" y="266" class="f l" style="animation-delay:2.31s"><tspan fill="#7c7c88">  certify    </tspan><tspan fill="#e4e4ec">16/16 signatures · quorum 11 · </tspan><tspan fill="#00ff87">certified ✓</tspan><tspan fill="#7c7c88">       2 ms</tspan></text>
+<text x="26" y="287" class="f l" style="animation-delay:2.36s"></text>
+<text x="26" y="308" class="f l" style="animation-delay:2.91s"><tspan fill="#af87ff">$ </tspan><tspan fill="#ffffff" font-weight="600">refrax devnet wipe 7</tspan></text>
+<text x="26" y="329" class="f l" style="animation-delay:3.03s"><tspan fill="#7c7c88">  deleted    </tspan><tspan fill="#e4e4ec">1 facet from </tspan><tspan fill="#5fd7ff">http://127.0.0.1:7707</tspan></text>
+<text x="26" y="350" class="f l" style="animation-delay:3.15s"><tspan fill="#7c7c88">  ── devnet log ──</tspan></text>
+<text x="26" y="371" class="f l" style="animation-delay:3.27s"><tspan fill="#7c7c88">  19        </tspan><tspan fill="#ffd75f">node-07</tspan><tspan fill="#e4e4ec"> missed a proof · </tspan><tspan fill="#af87ff">BbBw…goJW</tspan><tspan fill="#e4e4ec"> facet 06 · vote opened by node-16</tspan></text>
+<text x="26" y="392" class="f l" style="animation-delay:3.39s"><tspan fill="#7c7c88">  24        </tspan><tspan fill="#ff5f5f">node-07 slashed 500 REFRAX</tspan><tspan fill="#e4e4ec"> · </tspan><tspan fill="#af87ff">BbBw…goJW</tspan><tspan fill="#e4e4ec"> · 11 votes · stake 2,000 REFRAX</tspan></text>
+<text x="26" y="413" class="f l" style="animation-delay:3.44s"></text>
+<text x="26" y="434" class="f l" style="animation-delay:3.99s"><tspan fill="#af87ff">$ </tspan><tspan fill="#ffffff" font-weight="600">refrax get BbBw21CYd9ukRes16jP3sv98PCdJmv4kPeBKe8gPgoJW -o copy.png</tspan></text>
+<text x="26" y="455" class="f l" style="animation-delay:4.11s"><tspan fill="#7c7c88">  fetch      </tspan><tspan fill="#e4e4ec">facets </tspan><tspan fill="#af87ff">00 01 02 03 04</tspan><tspan fill="#e4e4ec"> · 0 skipped</tspan><tspan fill="#7c7c88">                3 ms</tspan></text>
+<text x="26" y="476" class="f l" style="animation-delay:4.23s"><tspan fill="#7c7c88">  rebuild    </tspan><tspan fill="#e4e4ec">142.6 KiB · data facets, no decoding · roots match </tspan><tspan fill="#00ff87">✓</tspan></text>
+<text x="26" y="497" class="f l" style="animation-delay:4.63s"><tspan fill="#af87ff">$ </tspan><tspan class="k" fill="#e4e4ec">▍</tspan></text>
+</svg>
