@@ -1,0 +1,19 @@
+[package]
+name = "refrax-core"
+description = "Erasure coding, merkle commitments, identities and storage proofs for Refrax."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+
+[dependencies]
+bs58.workspace = true
+ed25519-dalek.workspace = true
+hex.workspace = true
+rand.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true

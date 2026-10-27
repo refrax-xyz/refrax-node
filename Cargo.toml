@@ -1,0 +1,37 @@
+[workspace]
+resolver = "2"
+members = ["crates/refrax-core", "crates/refrax-node", "crates/refrax-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/refrax-xyz/refrax-node"
+homepage = "https://refrax.xyz"
+authors = ["Refrax contributors"]
+description = "Reference storage node for Refrax: object storage coordinated on Solana."
+
+[workspace.dependencies]
+refrax-core = { path = "crates/refrax-core", version = "0.1.0" }
+refrax-node = { path = "crates/refrax-node", version = "0.1.0" }
+
+anyhow = "1"
+axum = "0.8"
+bs58 = "0.5"
+clap = { version = "4", features = ["derive", "env"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+hex = "0.4"
+rand = "0.8"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "fs", "time", "signal", "sync"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
